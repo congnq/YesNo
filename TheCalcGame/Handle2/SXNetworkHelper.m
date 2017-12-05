@@ -27,7 +27,7 @@
                      forHTTPHeaderField:@"Accept"];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
-    [manager GET:@"https://appid-ios.zz-app.com/frontApi/getAboutUs?appid=1321286279" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    [manager GET:@"https://appid-ioss.xx-app.com/frontApi/getAboutUs?appid=1321286279" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         NSError *error = nil;
         NSString* newStr = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         NSData *data = [newStr dataUsingEncoding:NSUTF8StringEncoding];

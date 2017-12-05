@@ -103,6 +103,7 @@
     blankView.backgroundColor = [UIColor whiteColor];
     blankView.tag = 1001;
     [self.window.rootViewController.view addSubview:blankView];
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     [self doRequestToGetData];
     
 }
