@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2A235BAB-AD78-473F-9FB1-3D6CE897748D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TheCalcGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CEA8BA3199EACF3C3236EA9F20C1F472556CB466</key>
+		<string>github.com:nilennoct/TheCalcGame.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TheCalcGame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CEA8BA3199EACF3C3236EA9F20C1F472556CB466</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:nilennoct/TheCalcGame.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CEA8BA3199EACF3C3236EA9F20C1F472556CB466</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CEA8BA3199EACF3C3236EA9F20C1F472556CB466</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TheCalcGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>

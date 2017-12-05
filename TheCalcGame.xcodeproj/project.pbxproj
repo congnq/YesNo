@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B25892FE9C902E47A44E862 /* libPods-TheCalcGame-TheCalcGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B5535E57E26127C11A5ADA /* libPods-TheCalcGame-TheCalcGameTests.a */; };
+		AF0E620C3C4EAF0944D3CAC9 /* libPods-TheCalcGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB1D6B56822A21E537F8A70 /* libPods-TheCalcGame.a */; };
+		B559B4FA1A349B2600D9BF7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B559B4F91A349B2600D9BF7B /* main.m */; };
+		B559B4FD1A349B2600D9BF7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B559B4FC1A349B2600D9BF7B /* AppDelegate.m */; };
+		B559B5031A349B2600D9BF7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B559B5011A349B2600D9BF7B /* Main.storyboard */; };
+		B559B5051A349B2600D9BF7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B559B5041A349B2600D9BF7B /* Images.xcassets */; };
+		B559B5081A349B2600D9BF7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B559B5061A349B2600D9BF7B /* LaunchScreen.xib */; };
+		B559B5141A349B2700D9BF7B /* TheCalcGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B559B5131A349B2700D9BF7B /* TheCalcGameTests.m */; };
+		B559B5201A349BCD00D9BF7B /* MT_Rand.m in Sources */ = {isa = PBXBuildFile; fileRef = B559B51F1A349BCD00D9BF7B /* MT_Rand.m */; };
+		B559B5231A35D3B500D9BF7B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B559B5221A35D3B400D9BF7B /* Utils.m */; };
+		B559B5271A35EF2D00D9BF7B /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = B559B5261A35EF2D00D9BF7B /* GameController.m */; };
+		B559B52C1A37395200D9BF7B /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = B559B5291A37395200D9BF7B /* Mediator.m */; };
+		B559B52D1A37395200D9BF7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B559B52B1A37395200D9BF7B /* ViewController.m */; };
+		F4F73A061FD68D31003E400A /* JKNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F73A031FD68D31003E400A /* JKNotifier.m */; };
+		F4F73A071FD68D31003E400A /* JKNotifierBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F73A051FD68D31003E400A /* JKNotifierBar.m */; };
+		F4F73A0A1FD6929D003E400A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A091FD6929D003E400A /* CFNetwork.framework */; };
+		F4F73A0C1FD692A8003E400A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A0B1FD692A8003E400A /* CoreFoundation.framework */; };
+		F4F73A0E1FD692B1003E400A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A0D1FD692B1003E400A /* CoreTelephony.framework */; };
+		F4F73A101FD692B8003E400A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A0F1FD692B8003E400A /* SystemConfiguration.framework */; };
+		F4F73A121FD692BD003E400A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A111FD692BD003E400A /* CoreGraphics.framework */; };
+		F4F73A141FD692C4003E400A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A131FD692C4003E400A /* Foundation.framework */; };
+		F4F73A161FD692CB003E400A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A151FD692CB003E400A /* UIKit.framework */; };
+		F4F73A181FD692D2003E400A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A171FD692D1003E400A /* Security.framework */; };
+		F4F73A1A1FD692DB003E400A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A191FD692DB003E400A /* libz.tbd */; };
+		F4F73A1C1FD692E5003E400A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A1B1FD692E5003E400A /* UserNotifications.framework */; };
+		F4F73A1E1FD692F0003E400A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A1D1FD692F0003E400A /* libresolv.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B559B50E1A349B2700D9BF7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B559B4EC1A349B2600D9BF7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B559B4F31A349B2600D9BF7B;
+			remoteInfo = TheCalcGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CB1D6B56822A21E537F8A70 /* libPods-TheCalcGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheCalcGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		966DE5D301E57FE21DEC2848 /* Pods-TheCalcGame-TheCalcGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCalcGame-TheCalcGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheCalcGame-TheCalcGameTests/Pods-TheCalcGame-TheCalcGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		A098B1F899DE94B8765C0500 /* Pods-TheCalcGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCalcGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheCalcGame/Pods-TheCalcGame.debug.xcconfig"; sourceTree = "<group>"; };
+		B559B4F41A349B2600D9BF7B /* TheCalcGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCalcGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B559B4F81A349B2600D9BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B559B4F91A349B2600D9BF7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B559B4FB1A349B2600D9BF7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B559B4FC1A349B2600D9BF7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B559B5021A349B2600D9BF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B559B5041A349B2600D9BF7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B559B5071A349B2600D9BF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B559B50D1A349B2700D9BF7B /* TheCalcGameTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheCalcGameTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B559B5121A349B2700D9BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B559B5131A349B2700D9BF7B /* TheCalcGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheCalcGameTests.m; sourceTree = "<group>"; };
+		B559B51E1A349BCD00D9BF7B /* MT_Rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MT_Rand.h; path = Utils/MT_Rand.h; sourceTree = "<group>"; };
+		B559B51F1A349BCD00D9BF7B /* MT_Rand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MT_Rand.m; path = Utils/MT_Rand.m; sourceTree = "<group>"; };
+		B559B5211A35D3B400D9BF7B /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Utils/Utils.h; sourceTree = "<group>"; };
+		B559B5221A35D3B400D9BF7B /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Utils/Utils.m; sourceTree = "<group>"; };
+		B559B5251A35EF2D00D9BF7B /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameController.h; path = Classes/GameController.h; sourceTree = "<group>"; };
+		B559B5261A35EF2D00D9BF7B /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameController.m; path = Classes/GameController.m; sourceTree = "<group>"; };
+		B559B5281A37395200D9BF7B /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mediator.h; path = Classes/Mediator.h; sourceTree = "<group>"; };
+		B559B5291A37395200D9BF7B /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mediator.m; path = Classes/Mediator.m; sourceTree = "<group>"; };
+		B559B52A1A37395200D9BF7B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = "<group>"; };
+		B559B52B1A37395200D9BF7B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/ViewController.m; sourceTree = "<group>"; };
+		B7313416D96600715CD56C38 /* Pods-TheCalcGame-TheCalcGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCalcGame-TheCalcGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheCalcGame-TheCalcGameTests/Pods-TheCalcGame-TheCalcGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C16E04D59260777A1D8C635C /* Pods-TheCalcGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheCalcGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheCalcGame/Pods-TheCalcGame.release.xcconfig"; sourceTree = "<group>"; };
+		C5B5535E57E26127C11A5ADA /* libPods-TheCalcGame-TheCalcGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheCalcGame-TheCalcGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F73A021FD68D31003E400A /* JKNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNotifier.h; sourceTree = "<group>"; };
+		F4F73A031FD68D31003E400A /* JKNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNotifier.m; sourceTree = "<group>"; };
+		F4F73A041FD68D31003E400A /* JKNotifierBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKNotifierBar.h; sourceTree = "<group>"; };
+		F4F73A051FD68D31003E400A /* JKNotifierBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKNotifierBar.m; sourceTree = "<group>"; };
+		F4F73A081FD69101003E400A /* TheCalcGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheCalcGame.entitlements; sourceTree = "<group>"; };
+		F4F73A091FD6929D003E400A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F4F73A0B1FD692A8003E400A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F4F73A0D1FD692B1003E400A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F4F73A0F1FD692B8003E400A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F4F73A111FD692BD003E400A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F4F73A131FD692C4003E400A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4F73A151FD692CB003E400A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4F73A171FD692D1003E400A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F4F73A191FD692DB003E400A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F4F73A1B1FD692E5003E400A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		F4F73A1D1FD692F0003E400A /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B559B4F11A349B2600D9BF7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F73A1E1FD692F0003E400A /* libresolv.tbd in Frameworks */,
+				F4F73A1C1FD692E5003E400A /* UserNotifications.framework in Frameworks */,
+				F4F73A1A1FD692DB003E400A /* libz.tbd in Frameworks */,
+				F4F73A181FD692D2003E400A /* Security.framework in Frameworks */,
+				F4F73A161FD692CB003E400A /* UIKit.framework in Frameworks */,
+				F4F73A141FD692C4003E400A /* Foundation.framework in Frameworks */,
+				F4F73A121FD692BD003E400A /* CoreGraphics.framework in Frameworks */,
+				F4F73A101FD692B8003E400A /* SystemConfiguration.framework in Frameworks */,
+				F4F73A0E1FD692B1003E400A /* CoreTelephony.framework in Frameworks */,
+				F4F73A0C1FD692A8003E400A /* CoreFoundation.framework in Frameworks */,
+				F4F73A0A1FD6929D003E400A /* CFNetwork.framework in Frameworks */,
+				AF0E620C3C4EAF0944D3CAC9 /* libPods-TheCalcGame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B559B50A1A349B2700D9BF7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B25892FE9C902E47A44E862 /* libPods-TheCalcGame-TheCalcGameTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630AF1DC863CD67ADE1C26AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A098B1F899DE94B8765C0500 /* Pods-TheCalcGame.debug.xcconfig */,
+				C16E04D59260777A1D8C635C /* Pods-TheCalcGame.release.xcconfig */,
+				B7313416D96600715CD56C38 /* Pods-TheCalcGame-TheCalcGameTests.debug.xcconfig */,
+				966DE5D301E57FE21DEC2848 /* Pods-TheCalcGame-TheCalcGameTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91B857EC3729FF4EAECE40C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4F73A1D1FD692F0003E400A /* libresolv.tbd */,
+				F4F73A1B1FD692E5003E400A /* UserNotifications.framework */,
+				F4F73A191FD692DB003E400A /* libz.tbd */,
+				F4F73A171FD692D1003E400A /* Security.framework */,
+				F4F73A151FD692CB003E400A /* UIKit.framework */,
+				F4F73A131FD692C4003E400A /* Foundation.framework */,
+				F4F73A111FD692BD003E400A /* CoreGraphics.framework */,
+				F4F73A0F1FD692B8003E400A /* SystemConfiguration.framework */,
+				F4F73A0D1FD692B1003E400A /* CoreTelephony.framework */,
+				F4F73A0B1FD692A8003E400A /* CoreFoundation.framework */,
+				F4F73A091FD6929D003E400A /* CFNetwork.framework */,
+				5CB1D6B56822A21E537F8A70 /* libPods-TheCalcGame.a */,
+				C5B5535E57E26127C11A5ADA /* libPods-TheCalcGame-TheCalcGameTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B559B4EB1A349B2600D9BF7B = {
+			isa = PBXGroup;
+			children = (
+				B559B4F61A349B2600D9BF7B /* TheCalcGame */,
+				B559B5101A349B2700D9BF7B /* TheCalcGameTests */,
+				B559B4F51A349B2600D9BF7B /* Products */,
+				630AF1DC863CD67ADE1C26AE /* Pods */,
+				91B857EC3729FF4EAECE40C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B559B4F51A349B2600D9BF7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B559B4F41A349B2600D9BF7B /* TheCalcGame.app */,
+				B559B50D1A349B2700D9BF7B /* TheCalcGameTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B559B4F61A349B2600D9BF7B /* TheCalcGame */ = {
+			isa = PBXGroup;
+			children = (
+				F4F73A081FD69101003E400A /* TheCalcGame.entitlements */,
+				F4F73A001FD68D27003E400A /* Library */,
+				B559B5241A35EF0500D9BF7B /* Classes */,
+				B559B51D1A349BA900D9BF7B /* Utils */,
+				B559B4FB1A349B2600D9BF7B /* AppDelegate.h */,
+				B559B4FC1A349B2600D9BF7B /* AppDelegate.m */,
+				B559B5011A349B2600D9BF7B /* Main.storyboard */,
+				B559B5041A349B2600D9BF7B /* Images.xcassets */,
+				B559B5061A349B2600D9BF7B /* LaunchScreen.xib */,
+				B559B4F71A349B2600D9BF7B /* Supporting Files */,
+			);
+			path = TheCalcGame;
+			sourceTree = "<group>";
+		};
+		B559B4F71A349B2600D9BF7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B559B4F81A349B2600D9BF7B /* Info.plist */,
+				B559B4F91A349B2600D9BF7B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B559B5101A349B2700D9BF7B /* TheCalcGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				B559B5131A349B2700D9BF7B /* TheCalcGameTests.m */,
+				B559B5111A349B2700D9BF7B /* Supporting Files */,
+			);
+			path = TheCalcGameTests;
+			sourceTree = "<group>";
+		};
+		B559B5111A349B2700D9BF7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B559B5121A349B2700D9BF7B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B559B51D1A349BA900D9BF7B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B559B51E1A349BCD00D9BF7B /* MT_Rand.h */,
+				B559B51F1A349BCD00D9BF7B /* MT_Rand.m */,
+				B559B5211A35D3B400D9BF7B /* Utils.h */,
+				B559B5221A35D3B400D9BF7B /* Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		B559B5241A35EF0500D9BF7B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B559B5281A37395200D9BF7B /* Mediator.h */,
+				B559B5291A37395200D9BF7B /* Mediator.m */,
+				B559B52A1A37395200D9BF7B /* ViewController.h */,
+				B559B52B1A37395200D9BF7B /* ViewController.m */,
+				B559B5251A35EF2D00D9BF7B /* GameController.h */,
+				B559B5261A35EF2D00D9BF7B /* GameController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F4F73A001FD68D27003E400A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F4F73A011FD68D31003E400A /* PushNotificationView */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		F4F73A011FD68D31003E400A /* PushNotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				F4F73A021FD68D31003E400A /* JKNotifier.h */,
+				F4F73A031FD68D31003E400A /* JKNotifier.m */,
+				F4F73A041FD68D31003E400A /* JKNotifierBar.h */,
+				F4F73A051FD68D31003E400A /* JKNotifierBar.m */,
+			);
+			name = PushNotificationView;
+			path = ../../../Library/PushNotificationView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B559B4F31A349B2600D9BF7B /* TheCalcGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B559B5171A349B2700D9BF7B /* Build configuration list for PBXNativeTarget "TheCalcGame" */;
+			buildPhases = (
+				300A403A10D4A9A8DAD76AAC /* [CP] Check Pods Manifest.lock */,
+				B559B4F01A349B2600D9BF7B /* Sources */,
+				B559B4F11A349B2600D9BF7B /* Frameworks */,
+				B559B4F21A349B2600D9BF7B /* Resources */,
+				BBCE0A907A92902192E50426 /* [CP] Embed Pods Frameworks */,
+				5929703D88176F928E0AE28C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheCalcGame;
+			productName = TheCalcGame;
+			productReference = B559B4F41A349B2600D9BF7B /* TheCalcGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B559B50C1A349B2700D9BF7B /* TheCalcGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B559B51A1A349B2700D9BF7B /* Build configuration list for PBXNativeTarget "TheCalcGameTests" */;
+			buildPhases = (
+				6CD22198C861332F40ED9864 /* [CP] Check Pods Manifest.lock */,
+				B559B5091A349B2700D9BF7B /* Sources */,
+				B559B50A1A349B2700D9BF7B /* Frameworks */,
+				B559B50B1A349B2700D9BF7B /* Resources */,
+				55CE5022E88FB2C8B3E59E29 /* [CP] Embed Pods Frameworks */,
+				AAEC9ADCF28487D4E71C16AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B559B50F1A349B2700D9BF7B /* PBXTargetDependency */,
+			);
+			name = TheCalcGameTests;
+			productName = TheCalcGameTests;
+			productReference = B559B50D1A349B2700D9BF7B /* TheCalcGameTests.app */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B559B4EC1A349B2600D9BF7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Neo He";
+				TargetAttributes = {
+					B559B4F31A349B2600D9BF7B = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 5NX83V4A32;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					B559B50C1A349B2700D9BF7B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B559B4F31A349B2600D9BF7B;
+					};
+				};
+			};
+			buildConfigurationList = B559B4EF1A349B2600D9BF7B /* Build configuration list for PBXProject "TheCalcGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B559B4EB1A349B2600D9BF7B;
+			productRefGroup = B559B4F51A349B2600D9BF7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B559B4F31A349B2600D9BF7B /* TheCalcGame */,
+				B559B50C1A349B2700D9BF7B /* TheCalcGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B559B4F21A349B2600D9BF7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B559B5031A349B2600D9BF7B /* Main.storyboard in Resources */,
+				B559B5081A349B2600D9BF7B /* LaunchScreen.xib in Resources */,
+				B559B5051A349B2600D9BF7B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B559B50B1A349B2700D9BF7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		300A403A10D4A9A8DAD76AAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheCalcGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55CE5022E88FB2C8B3E59E29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCalcGame-TheCalcGameTests/Pods-TheCalcGame-TheCalcGameTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5929703D88176F928E0AE28C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCalcGame/Pods-TheCalcGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CD22198C861332F40ED9864 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheCalcGame-TheCalcGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAEC9ADCF28487D4E71C16AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCalcGame-TheCalcGameTests/Pods-TheCalcGame-TheCalcGameTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBCE0A907A92902192E50426 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheCalcGame/Pods-TheCalcGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B559B4F01A349B2600D9BF7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B559B52D1A37395200D9BF7B /* ViewController.m in Sources */,
+				B559B52C1A37395200D9BF7B /* Mediator.m in Sources */,
+				B559B5201A349BCD00D9BF7B /* MT_Rand.m in Sources */,
+				B559B4FD1A349B2600D9BF7B /* AppDelegate.m in Sources */,
+				F4F73A061FD68D31003E400A /* JKNotifier.m in Sources */,
+				B559B5271A35EF2D00D9BF7B /* GameController.m in Sources */,
+				B559B5231A35D3B500D9BF7B /* Utils.m in Sources */,
+				B559B4FA1A349B2600D9BF7B /* main.m in Sources */,
+				F4F73A071FD68D31003E400A /* JKNotifierBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B559B5091A349B2700D9BF7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B559B5141A349B2700D9BF7B /* TheCalcGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B559B50F1A349B2700D9BF7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B559B4F31A349B2600D9BF7B /* TheCalcGame */;
+			targetProxy = B559B50E1A349B2700D9BF7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B559B5011A349B2600D9BF7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B559B5021A349B2600D9BF7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B559B5061A349B2600D9BF7B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B559B5071A349B2600D9BF7B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B559B5151A349B2700D9BF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B559B5161A349B2700D9BF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B559B5181A349B2700D9BF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A098B1F899DE94B8765C0500 /* Pods-TheCalcGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TheCalcGame/TheCalcGame.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5NX83V4A32;
+				INFOPLIST_FILE = TheCalcGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.congnq.gameYesNo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "24c9b87d-f02c-40ed-86d1-7e201c065704";
+				PROVISIONING_PROFILE_SPECIFIER = "YesNo-Development";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B559B5191A349B2700D9BF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16E04D59260777A1D8C635C /* Pods-TheCalcGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TheCalcGame/TheCalcGame.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5NX83V4A32;
+				INFOPLIST_FILE = TheCalcGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.congnq.gameYesNo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5c554c28-445a-4c45-9a43-0384d9e6b8a8";
+				PROVISIONING_PROFILE_SPECIFIER = "YESNO-Production";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B559B51B1A349B2700D9BF7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7313416D96600715CD56C38 /* Pods-TheCalcGame-TheCalcGameTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TheCalcGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheCalcGame.app/TheCalcGame";
+			};
+			name = Debug;
+		};
+		B559B51C1A349B2700D9BF7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 966DE5D301E57FE21DEC2848 /* Pods-TheCalcGame-TheCalcGameTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TheCalcGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheCalcGame.app/TheCalcGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B559B4EF1A349B2600D9BF7B /* Build configuration list for PBXProject "TheCalcGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B559B5151A349B2700D9BF7B /* Debug */,
+				B559B5161A349B2700D9BF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B559B5171A349B2700D9BF7B /* Build configuration list for PBXNativeTarget "TheCalcGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B559B5181A349B2700D9BF7B /* Debug */,
+				B559B5191A349B2700D9BF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B559B51A1A349B2700D9BF7B /* Build configuration list for PBXNativeTarget "TheCalcGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B559B51B1A349B2700D9BF7B /* Debug */,
+				B559B51C1A349B2700D9BF7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B559B4EC1A349B2600D9BF7B /* Project object */;
+}
