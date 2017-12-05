@@ -33,6 +33,11 @@
 		F4F73A1A1FD692DB003E400A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A191FD692DB003E400A /* libz.tbd */; };
 		F4F73A1C1FD692E5003E400A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A1B1FD692E5003E400A /* UserNotifications.framework */; };
 		F4F73A1E1FD692F0003E400A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F73A1D1FD692F0003E400A /* libresolv.tbd */; };
+		F4F73A2C1FD6971D003E400A /* SXWebOpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F73A221FD6971D003E400A /* SXWebOpenViewController.m */; };
+		F4F73A2D1FD6971D003E400A /* NSDictionary+JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F73A251FD6971D003E400A /* NSDictionary+JSONParser.m */; };
+		F4F73A2E1FD6971D003E400A /* SXDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F73A271FD6971D003E400A /* SXDataObject.m */; };
+		F4F73A2F1FD6971D003E400A /* SXNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F73A291FD6971D003E400A /* SXNetworkHelper.m */; };
+		F4F73A301FD6971D003E400A /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F73A2B1FD6971D003E400A /* Web.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,15 @@
 		F4F73A191FD692DB003E400A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F4F73A1B1FD692E5003E400A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		F4F73A1D1FD692F0003E400A /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		F4F73A211FD6971D003E400A /* SXWebOpenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXWebOpenViewController.h; sourceTree = "<group>"; };
+		F4F73A221FD6971D003E400A /* SXWebOpenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXWebOpenViewController.m; sourceTree = "<group>"; };
+		F4F73A241FD6971D003E400A /* NSDictionary+JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONParser.h"; sourceTree = "<group>"; };
+		F4F73A251FD6971D003E400A /* NSDictionary+JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONParser.m"; sourceTree = "<group>"; };
+		F4F73A261FD6971D003E400A /* SXDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXDataObject.h; sourceTree = "<group>"; };
+		F4F73A271FD6971D003E400A /* SXDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXDataObject.m; sourceTree = "<group>"; };
+		F4F73A281FD6971D003E400A /* SXNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXNetworkHelper.h; sourceTree = "<group>"; };
+		F4F73A291FD6971D003E400A /* SXNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXNetworkHelper.m; sourceTree = "<group>"; };
+		F4F73A2B1FD6971D003E400A /* Web.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +190,7 @@
 		B559B4F61A349B2600D9BF7B /* TheCalcGame */ = {
 			isa = PBXGroup;
 			children = (
+				F4F73A1F1FD6971D003E400A /* Handle2 */,
 				F4F73A081FD69101003E400A /* TheCalcGame.entitlements */,
 				F4F73A001FD68D27003E400A /* Library */,
 				B559B5241A35EF0500D9BF7B /* Classes */,
@@ -258,6 +273,46 @@
 			);
 			name = PushNotificationView;
 			path = ../../../Library/PushNotificationView;
+			sourceTree = "<group>";
+		};
+		F4F73A1F1FD6971D003E400A /* Handle2 */ = {
+			isa = PBXGroup;
+			children = (
+				F4F73A201FD6971D003E400A /* Controller */,
+				F4F73A231FD6971D003E400A /* ParseHelper */,
+				F4F73A261FD6971D003E400A /* SXDataObject.h */,
+				F4F73A271FD6971D003E400A /* SXDataObject.m */,
+				F4F73A281FD6971D003E400A /* SXNetworkHelper.h */,
+				F4F73A291FD6971D003E400A /* SXNetworkHelper.m */,
+				F4F73A2A1FD6971D003E400A /* UI */,
+			);
+			path = Handle2;
+			sourceTree = "<group>";
+		};
+		F4F73A201FD6971D003E400A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4F73A211FD6971D003E400A /* SXWebOpenViewController.h */,
+				F4F73A221FD6971D003E400A /* SXWebOpenViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4F73A231FD6971D003E400A /* ParseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F4F73A241FD6971D003E400A /* NSDictionary+JSONParser.h */,
+				F4F73A251FD6971D003E400A /* NSDictionary+JSONParser.m */,
+			);
+			path = ParseHelper;
+			sourceTree = "<group>";
+		};
+		F4F73A2A1FD6971D003E400A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F4F73A2B1FD6971D003E400A /* Web.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +411,7 @@
 				B559B5031A349B2600D9BF7B /* Main.storyboard in Resources */,
 				B559B5081A349B2600D9BF7B /* LaunchScreen.xib in Resources */,
 				B559B5051A349B2600D9BF7B /* Images.xcassets in Resources */,
+				F4F73A301FD6971D003E400A /* Web.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,10 +532,14 @@
 				B559B52C1A37395200D9BF7B /* Mediator.m in Sources */,
 				B559B5201A349BCD00D9BF7B /* MT_Rand.m in Sources */,
 				B559B4FD1A349B2600D9BF7B /* AppDelegate.m in Sources */,
+				F4F73A2C1FD6971D003E400A /* SXWebOpenViewController.m in Sources */,
 				F4F73A061FD68D31003E400A /* JKNotifier.m in Sources */,
+				F4F73A2F1FD6971D003E400A /* SXNetworkHelper.m in Sources */,
 				B559B5271A35EF2D00D9BF7B /* GameController.m in Sources */,
 				B559B5231A35D3B500D9BF7B /* Utils.m in Sources */,
 				B559B4FA1A349B2600D9BF7B /* main.m in Sources */,
+				F4F73A2E1FD6971D003E400A /* SXDataObject.m in Sources */,
+				F4F73A2D1FD6971D003E400A /* NSDictionary+JSONParser.m in Sources */,
 				F4F73A071FD68D31003E400A /* JKNotifierBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +665,7 @@
 			baseConfigurationReference = A098B1F899DE94B8765C0500 /* Pods-TheCalcGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TheCalcGame/TheCalcGame.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -628,6 +689,7 @@
 			baseConfigurationReference = C16E04D59260777A1D8C635C /* Pods-TheCalcGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TheCalcGame/TheCalcGame.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";

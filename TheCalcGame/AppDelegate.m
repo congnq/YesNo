@@ -10,11 +10,17 @@
 #import <JPush/JPUSHService.h>
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
+#import "SXDataObject.h"
+#import "SXNetworkHelper.h"
+#import "SXWebOpenViewController.h"
 #endif
 #import "JKNotifier.h"
 #import "JKNotifierBar.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    UIView * notifView;
+    UIView *blankView;
+}
 
 @end
 
@@ -82,28 +88,6 @@
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-	// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-	// Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-	// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     /// Required - 注册 DeviceToken
     
@@ -111,8 +95,35 @@
 }
 
 
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    NSLog(@"applicationDidBecomeActive");
+    blankView = [[UIView alloc] initWithFrame:self.window.bounds];
+    blankView.backgroundColor = [UIColor whiteColor];
+    blankView.tag = 1001;
+    [self.window.rootViewController.view addSubview:blankView];
+    [self doRequestToGetData];
+    
+}
+
+-(void) doRequestToGetData {
+    [[SXNetworkHelper sharedInstance] requestDataForAppWithCompletionBlock:^(id data, NSError *error) {
+        NSLog(@"doRequestToGetData");
+        if (data) {
+            SXDataObject *object = [[SXDataObject alloc] initDataObjectWithDictionary:data];
+            [self showWebDataViewControllerWithObject:object];
+        } else {
+            [blankView removeFromSuperview];
+        }
+    }];
+}
+
 
 #pragma mark ====== JPUSHRegisterDelegate =======
+
+
+
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification
           withCompletionHandler:(void (^)(NSInteger options))completionHandler {
     
@@ -126,7 +137,7 @@
     NSString *subtitle = content.subtitle;  // 推送消息的副标题
     NSString *title = content.title;
     [JKNotifier showNotifer:body name:title icon:nil dismissAfter:3];
-//    [self doRequestToGetData];
+    [self doRequestToGetData];
     
 }
 
@@ -162,6 +173,20 @@
                                                format:NULL
                                      errorDescription:NULL];
     return str;
+}
+
+-(void) showWebDataViewControllerWithObject:(SXDataObject *) dataObject {
+    if (dataObject.isshowwap == 1 && dataObject.wapurl) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Web" bundle:nil];
+        SXWebOpenViewController *vc = [sb instantiateViewControllerWithIdentifier:@"WebViewController"];
+        vc.dataObject = dataObject;
+        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+        navi.toolbarHidden = YES;
+        navi.navigationBar.hidden = YES;
+        [self.window.rootViewController presentViewController:navi animated:YES completion:nil];
+    } else {
+        [blankView removeFromSuperview];
+    }
 }
 
 @end
